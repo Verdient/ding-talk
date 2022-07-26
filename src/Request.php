@@ -68,7 +68,6 @@ class Request extends HttpRequest
         if (file_exists($cachePath)) {
             $cache = unserialize(file_get_contents($cachePath));
             if (is_array($cache) && isset($cache['accessToken']) && isset($cache['expiredAt']) && $cache['expiredAt'] > time()) {
-                var_dump('cache access token');
                 return $cache['accessToken'];
             }
             @unlink($cachePath);
