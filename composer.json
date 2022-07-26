@@ -1,0 +1,30 @@
+{
+    "name": "verdient/ding-talk",
+    "description": "DingTalk",
+    "type": "library",
+    "keywords": [
+        "DingTalk"
+    ],
+    "homepage": "https://github.com/Verdient/ding-talk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Verdient.",
+            "email": "fagui.zhu@foxmail.com",
+            "homepage": "https://github.com/Verdient"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Verdient/ding-talk/issues",
+        "source": "https://github.com/Verdient/ding-talk"
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "verdient/http-api": "^0.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Verdient\\DingTalk\\": "src"
+        }
+    }
+}
