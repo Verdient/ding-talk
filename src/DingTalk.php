@@ -54,6 +54,7 @@ class DingTalk extends AbstractClient
      */
     public function request($path): Request
     {
+        /** @var Request */
         $request = parent::request($path);
         $request->appKey = $this->appKey;
         $request->appSecret = $this->appSecret;
